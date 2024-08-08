@@ -185,26 +185,25 @@ const OneboxPage = () => {
 
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if (event.key === 'r' || event.key === 'R') {
-        if (!open2) {  // Only set open if open2 is not active
+      if (event.key === "r" || event.key === "R") {
+        if (!open2) {
+          // Only set open if open2 is not active
           setOpen(true);
         }
-      } else if (event.key === 'd' || event.key === 'D') {
-        if (!open) {  // Only set open2 if open is not active
+      } else if (event.key === "d" || event.key === "D") {
+        if (!open) {
+          // Only set open2 if open is not active
           setOpen2(true);
         }
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
 
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, [open, open2]);
-
-  
-
 
   return (
     <div className="flex flex-col h-screen overflow-hidden">
@@ -308,7 +307,7 @@ const OneboxPage = () => {
                                 >
                                   <hr />
 
-                                  <div className="flex gap-2 items-start pt-1 mt-2 pl-2 w-full max-w-[255px]">
+                                  <div className="flex gap-2 items-start pt-1 mt-2 pl-2 cursor-pointer w-full max-w-[255px]">
                                     <div className="flex gap-2 items-start py-1 pl-1 rounded-lg min-w-[240px] w-[247px]">
                                       <div className="flex flex-col min-w-[240px] w-[243px]">
                                         <div className="flex flex-col w-full max-w-[243px]">

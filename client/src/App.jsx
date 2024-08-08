@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SignUpPage from "./pages/SignUpPage";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import OneboxPage from "./pages/OneboxPage";
+import OneboxPage from "./pages/OneboxPage.jsx";
 import { ThemeProvider } from "./context/theme";
 
 const App = () => {
