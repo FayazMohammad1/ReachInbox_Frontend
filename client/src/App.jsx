@@ -1,8 +1,8 @@
 import React from 'react'
 import SignUpPage from './pages/SignUpPage'
 import { Route, Routes } from 'react-router-dom'
-import OneBoxPage from './pages/OneBoxPage'
-import InboxPage from './pages/InboxPage'
+import Home from './pages/Home'
+import OneboxPage from './pages/OneboxPage'
 
 
 const App = () => {
@@ -10,8 +10,8 @@ const App = () => {
     <>
     <Routes>
       <Route path='/' element={<SignUpPage/>} />
-      <Route path='/empty' element={<OneBoxPage/>} />
-      <Route path='/inbox' element={<InboxPage/>} />
+      <Route path='/home' element={<Home/>} />
+      <Route path='/onebox' element={<OneboxPage/>} />
     </Routes>
     </>
   )

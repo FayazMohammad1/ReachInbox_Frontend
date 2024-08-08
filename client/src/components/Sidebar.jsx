@@ -15,7 +15,7 @@ export default function Sidebar({ children }) {
     >
       <nav className="h-full fixed flex flex-col dark:bg-[#111111] border-r border-gray-700 z-10  shadow-sm">
         <div className="p-4 pb-2 mt-2 ml-auto mr-auto mb-10 flex justify-between items-center">
-          <Link to="/empty">
+          <Link to="/home">
             <img
               src="https://app.reachinbox.ai/assets/logo.svg"
               alt=""
