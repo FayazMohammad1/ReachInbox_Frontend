@@ -13,7 +13,7 @@ export default function Sidebar({ children }) {
         expanded ? "mr-14" : "mr-2"
       }`}
     >
-      <nav className="h-full fixed flex flex-col dark:bg-[#111111] border-r border-gray-700 z-10  shadow-sm">
+      <nav className="h-full fixed flex flex-col bg-white dark:bg-[#111111] border-r border-gray-200 dark:border-gray-700 z-10  shadow-sm">
         <div className="p-4 pb-2 mt-2 ml-auto mr-auto mb-10 flex justify-between items-center">
           <Link to="/home">
             <img
@@ -43,8 +43,8 @@ export function SidebarItem({ icon, text, active, alert }) {
         transition-colors group 
         ${
           active
-            ? "bg-gradient-to-tr from-gray-800 to-gray-700 dark:text-white"
-            : "hover:bg-gray-800 text-gray-600"
+            ? "bg-gradient-to-tr dark:from-gray-800 dark:to-gray-700 dark:text-white text-gray-800"
+            : "dark:hover:bg-gray-800 hover:bg-gray-200 text-gray-500 dark:text-gray-600"
         }
     `}
     >

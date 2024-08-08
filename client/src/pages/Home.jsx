@@ -22,21 +22,22 @@ const Home = () => {
           <SidebarItem icon={<Mail size={22} />} text="Emails" />
           <SidebarItem icon={<Send size={22} />} text="Campaigns" />
           <SidebarItem icon={<List size={22} />} text="Leads" />
-          <Link to='/onebox'>
-          <SidebarItem icon={<Inbox size={22} />} text="OneBox" alert />
+          <Link to="/onebox">
+            <SidebarItem icon={<Inbox size={22} />} text="OneBox" alert />
           </Link>
-          
+
           <SidebarItem
             icon={<ChartNoAxesColumn size={22} />}
             text="Analytics"
+            className="mb-auto"
           />
         </Sidebar>
 
-        <div className="main flex-1 flex flex-col w-[85%] md:ml-0 bg-black">
+        <div className="main flex-1 flex flex-col w-[85%] md:ml-0 bg-white dark:bg-black">
           <div className="main-container flex flex-col">
             <Navbar />
-            <section className="flex flex-col justify-center items-center px-20 py-36 text-center bg-black max-md:px-5 max-md:py-24 max-md:max-w-full">
-              <div className="flex flex-col justify-center items-center -mb-8 max-w-full bg-black w-[832px] max-md:mb-2.5">
+            <section className="flex flex-col justify-center items-center px-20 py-36 text-center bg-white dark:bg-black max-md:px-5 max-md:py-24 max-md:max-w-full">
+              <div className="flex flex-col justify-center items-center -mb-8 max-w-full text-white dark:bg-black w-[832px] max-md:mb-2.5">
                 <svg
                   width="301"
                   height="230"
@@ -459,7 +460,7 @@ const Home = () => {
                   </defs>
                 </svg>
                 <div className="flex flex-col justify-center items-center mt-12 max-md:mt-10 max-md:max-w-full">
-                  <h2 className="text-2xl font-bold leading-loose text-white max-md:max-w-full">
+                  <h2 className="text-2xl font-bold leading-loose text-gray-900 dark:text-white max-md:max-w-full">
                     It's the beginning of a legendary sales pipeline
                   </h2>
                   <p className="mt-6 text-lg font-medium leading-7 text-neutral-400 w-[289px]">
