@@ -15,7 +15,7 @@ app.use('/api/auth', authRouter);
 
 // 3) MONGO DB CONNECTION
 mongoose
-  .connect("mongodb://127.0.0.1:27017/MAILS")
+  .connect("mongodb+srv://rukhildhanu03:OIAszlFuSRqvfy0P@cluster0.f9wyf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(async () => {
     console.log("Connected to MongoDB!");
     // Call the save_default_emails method after connection
