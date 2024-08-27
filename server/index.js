@@ -5,6 +5,7 @@ const cors = require("cors");
 const authRouter = require('./routes/authRoute');
 const { save_default_emails } = require('./controllers/authController'); // Import the method
 const app = express();
+const DATABASE = process.env.DATABASE
 
 // 1) MIDDLEWARES
 app.use(cors());
@@ -15,7 +16,7 @@ app.use('/api/auth', authRouter);
 
 // 3) MONGO DB CONNECTION
 mongoose
-  .connect("mongodb://127.0.0.1:27017/MAILS")
+  .connect(`${DATABASE}/MAILS`)
   .then(async () => {
     console.log("Connected to MongoDB!");
     // Call the save_default_emails method after connection
