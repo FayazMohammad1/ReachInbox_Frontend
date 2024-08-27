@@ -5,7 +5,6 @@ const cors = require("cors");
 const authRouter = require('./routes/authRoute');
 const { save_default_emails } = require('./controllers/authController'); // Import the method
 const app = express();
-require("dotenv").config()
 
 // 1) MIDDLEWARES
 app.use(cors());
